@@ -4,7 +4,7 @@ This is scripts and tools is from amlogic uboot source and nothing is changed in
 BURNNIG WRONG EFUSE PATTERN CAN DAMAGE FOREVER YOUR BOX AND NOTHING CAN RECOVER BOX!!!!!
 !!!WARNING!!!!!!!!!
 
-./make.sh  #create 5 efuse pattern 
+./make.sh  #create g12a/g12b 5 efuse pattern 
 
 1. pattern.efuse_debug 		(debug version to see structure)
 2. pattern.efuse 		(pattern for burn in efuse)

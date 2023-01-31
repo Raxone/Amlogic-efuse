@@ -1,0 +1,38 @@
+This is scripts and tools is from amlogic uboot source and nothing is changed in scripts.
+
+!!!WARNING!!!!!!!!!
+BURNNIG WRONG EFUSE PATTERN CAN DAMAGE FOREVER YOUR BOX AND NOTHING CAN RECOVER BOX!!!!!
+!!!WARNING!!!!!!!!!
+
+./make.sh  #create 5 efuse pattern 
+
+1. pattern.efuse_debug 		(debug version to see structure)
+2. pattern.efuse 		(pattern for burn in efuse)
+3. pattern.usb.efuse_debug 	(debug of only usb password)
+4. pattern.usb.efuse_debug_EN 	(debug usb passoword and enable usb password in efuse)
+5. pattern.usb.efuse		(pattern for burn in efuse)
+
+
+For use dump.sh need to dump efuse from box.
+
+
+
+Licence pattern
+
+1.
+--enable-sb true 
+--enable-aes true 
+--enable-anti-rollback true 
+
+This create 7F on 0xa0
+
+
+ offset in efuse      0xa0 a1 a2 a3
+   			7F 00 00 00 03 07 00 00 67 80 00 00 20 00 00 15
+
+2.   			
+--enable-usb-password true			
+This create 02 on offset efuse 0xa1   			
+
+offset in efuse       0xa0 a1 a2 a3
+   			7F 02 00 00 03 07 00 00 67 80 00 00 20 00 00 15

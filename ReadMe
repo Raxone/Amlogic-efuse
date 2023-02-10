@@ -27,12 +27,12 @@ Licence pattern
 This create 7F on 0xa0
 
 
- offset in efuse      0xa0 a1 a2 a3
+ offset in efuse      a0 a1 a2 a3
    			7F 00 00 00 03 07 00 00 67 80 00 00 20 00 00 15
 
 2.   			
 --enable-usb-password true			
 This create 02 on offset efuse 0xa1   			
 
-offset in efuse       0xa0 a1 a2 a3
+offset in efuse       a0 a1 a2 a3
    			7F 02 00 00 03 07 00 00 67 80 00 00 20 00 00 15

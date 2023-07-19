@@ -4,6 +4,19 @@ This is scripts and tools is from amlogic uboot source and nothing is changed in
 BURNNIG WRONG EFUSE PATTERN CAN DAMAGE FOREVER YOUR BOX AND NOTHING CAN RECOVER BOX!!!!!
 !!!WARNING!!!!!!!!!
 
+Structure of efuse is:
+
+offset  and
+0x0     0x20 is chipid
+0x20    0x40 is aeskey
+0x40    0x50 is aeskey iv
+0x50    0x60 is m4 key
+0x60    0x80 is usb/jtag password
+0xa0    0xc0 is secure level, password enable/disable config set
+0x140   0x160 is rsa hash of all rsa keys
+0x160   0x180 is m4 rsa hash all rsa keys
+
+
 ./make.sh  #create g12a/g12b 5 efuse pattern 
 
 1. pattern.efuse_debug 		(debug version to see structure)

@@ -4,10 +4,11 @@ This is scripts and tools is from amlogic uboot source and nothing is changed in
 BURNNIG WRONG EFUSE PATTERN CAN DAMAGE FOREVER YOUR BOX AND NOTHING CAN RECOVER BOX!!!!!
 !!!WARNING!!!!!!!!!
 
-Structure of efuse is:
+Structure of efuse on s905*2,s905*3 is:
 
 offset  and
-0x0     0x20 is chipid
+0x0     0x4  amlogic header
+0x4     0x20 is chipid 
 0x20    0x40 is aeskey
 0x40    0x50 is aeskey iv
 0x50    0x60 is m4 key

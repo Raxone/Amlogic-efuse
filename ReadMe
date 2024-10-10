@@ -17,7 +17,7 @@ offset  and
 0x140   0x160 is rsa hash of all rsa keys
 0x160   0x180 is m4 rsa hash all rsa keys
 
-L0: 7F 03 00 1E [7F(Secure boot),03(Enable password jtag and usb),00(?),1E(Disabled USB DL(BL1_Bootrom))]
+L0: 7F 03 00 1E [7F(Secure boot),03(Enable password jtag and usb),00(Enable/Disabled USB DL(BL1_Bootrom)),1E(?))]
 L1: 03 07 00 00 
 L2: 67 80 00 00 
 L3: 20 00 00 15

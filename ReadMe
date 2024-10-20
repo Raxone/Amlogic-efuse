@@ -3,6 +3,8 @@ This is scripts and tools is from amlogic uboot source and nothing is changed in
 !!!WARNING!!!!!!!!!
 BURNNIG WRONG EFUSE PATTERN CAN DAMAGE FOREVER YOUR BOX AND NOTHING CAN RECOVER BOX!!!!!
 !!!WARNING!!!!!!!!!
+Screenshot is sram location where s905x3 put usb passwword but half of password.
+Password what i use is "passwordpassword" and salt is "salt"
 
 Structure of efuse on s905*2,s905*3 is:
 

@@ -75,4 +75,14 @@ This create 01 on offset efuse 0xa1
 offset in efuse       
            a0 a1 a2 a3
    		      7F 01 00 00 03 07 00 00 67 80 00 00 20 00 00 15
+4.   			
+--enable-jtag-password true		
+--enable-usb-password true		
+This create 03 on offset efuse 0xa1   			
+
+offset in efuse       
+           a0 a1 a2 a3
+   		      7F 03 00 00 03 07 00 00 67 80 00 00 20 00 00 15
+
+
 
